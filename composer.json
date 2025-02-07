@@ -1,0 +1,31 @@
+
+
+{
+    "name": "custom/customer",
+    "description": "customer pckage",
+    "type": "library",
+    "require": {
+        "php": "^8.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+             "Custom\\Customer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "pradeep",
+            "email": "pradeep@oonewoo.tech"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Custom\\Customer\\CustomerServiceProvider"
+            ]
+        }
+    }
+}
